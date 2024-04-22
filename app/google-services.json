@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "219216597788",
+    "project_id": "medialert-403002",
+    "storage_bucket": "medialert-403002.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219216597788:android:36813c2bfc41a4b241e0d9",
+        "android_client_info": {
+          "package_name": "com.ruiz.medialertugb_cru"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYVxbQACNllf94UoFIaFIkuTB7-YusS00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

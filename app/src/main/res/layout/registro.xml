@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idRegistro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/idScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_background">
+
+        <!--Logo de la Uiversidad -->
+        <ImageView
+            android:id="@+id/idL3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/diseno_ingreso"
+            android:contentDescription="TODO"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.033"
+            app:srcCompat="@drawable/logougb"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <!--Título de registro de nuevo usuario -->
+        <TextView
+            android:id="@+id/idTituloRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/TituloRegistro"
+            android:textColor="#0000FF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idL3"
+            app:layout_constraintVertical_bias="0.034" />
+        <!--nombre o nombres -->
+        <TextView
+            android:id="@+id/idNombres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/Nombres"
+            android:textColor="#0000FF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idTituloRegistro"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <!--Caja para ingresar nombre o nombres -->
+        <EditText
+            android:id="@+id/idCajaNombres"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@drawable/diseno_ingreso"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="@string/CajaNombres"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idNombres"
+            app:layout_constraintVertical_bias="0.01" />
+
+        <!--apellido o apellidos -->
+        <TextView
+            android:id="@+id/idApellidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/Apellidos"
+            android:textColor="#0000FF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idCajaNombres"
+            app:layout_constraintVertical_bias="0.042" />
+
+        <!--Caja para ingresar apellido o apellidos -->
+        <EditText
+            android:id="@+id/idCajaApellido"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@drawable/diseno_ingreso"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="@string/CajaApellidos"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idApellidos"
+            app:layout_constraintVertical_bias="0.012" />
+
+        <!--Ingresar edad -->
+        <TextView
+            android:id="@+id/idEdad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/Edad"
+            android:textColor="#0000FF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idCajaApellido"
+            app:layout_constraintVertical_bias="0.042" />
+
+        <!--Caja para ingresar edad -->
+        <EditText
+            android:id="@+id/idCajaEdad"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@drawable/diseno_ingreso"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="@string/CajaEdad"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.058"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idEdad"
+            app:layout_constraintVertical_bias="0.014"
+            tools:ignore="TextContrastCheck" />
+
+        <!--Ingresar género -->
+        <TextView
+            android:id="@+id/idGenero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/Genero"
+            android:textColor="#0000FF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.817"
+            app:layout_constraintStart_toEndOf="@+id/idEdad"
+            app:layout_constraintTop_toBottomOf="@+id/idCajaApellido"
+            app:layout_constraintVertical_bias="0.042" />
+
+        <!--Caja para ingresar género -->
+        <EditText
+            android:id="@+id/idCajaGener"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@drawable/diseno_ingreso"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="@string/CajaGenero"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.921"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idGenero"
+            app:layout_constraintVertical_bias="0.016"
+            tools:ignore="TextContrastCheck" />
+
+        <!--Ingresar carrera -->
+        <TextView
+            android:id="@+id/idCarrera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/Carrera"
+            android:textColor="#0000FF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idCajaEdad"
+            app:layout_constraintVertical_bias="0.044"
+            tools:ignore="TextSizeCheck" />
+
+        <!--Caja para ingresar carrera -->
+        <EditText
+            android:id="@+id/idCajaCarrera"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@drawable/diseno_ingreso"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="@string/CajaCarrera"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idCarrera"
+            app:layout_constraintVertical_bias="0.019"
+            tools:ignore="TextContrastCheck" />
+
+        <!--Ingresar correo institucional -->
+        <TextView
+            android:id="@+id/idCorreoInsti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/CorreoIns"
+            android:textColor="#0000FF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idCajaCarrera"
+            app:layout_constraintVertical_bias="0.039" />
+
+        <!--Caja para ingresar correo institucional -->
+        <EditText
+            android:id="@+id/idCajaCorreoInsti"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@drawable/diseno_ingreso"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="@string/CajaCorreoInst"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idCorreoInsti"
+            app:layout_constraintVertical_bias="0.017" />
+
+        <!--Ingresar contraseña -->
+        <TextView
+            android:id="@+id/idContra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/Contraseña"
+            android:textColor="#0000FF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.07"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idCajaCorreoInsti"
+            app:layout_constraintVertical_bias="0.077" />
+
+        <!-- Caja para ingresar contraseña-->
+        <EditText
+            android:id="@+id/idCajaContra"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@drawable/diseno_ingreso"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="@string/CajaContraseña"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.077"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idContra"
+            app:layout_constraintVertical_bias="0.045"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+        <!--Repetir contraseña -->
+        <TextView
+            android:id="@+id/idRepetirContra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/RepetirContra"
+            android:textColor="#0000FF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.882"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idCajaCorreoInsti"
+            app:layout_constraintVertical_bias="0.077" />
+
+        <!--Caja para repetir contraseña -->
+        <EditText
+            android:id="@+id/idCajaRepetir"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@drawable/diseno_ingreso"
+            android:ems="10"
+            android:fontFamily="serif"
+            android:hint="@string/CajaRepetir"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.919"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idRepetirContra"
+            app:layout_constraintVertical_bias="0.042"
+            tools:ignore="TextContrastCheck" />
+
+        <!--Botón para registrarte -->
+        <Button
+            android:id="@+id/idBtnRegi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0000FF"
+            android:fontFamily="serif"
+            android:text="@string/BtnRegister"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idCajaRepetir"
+            app:layout_constraintVertical_bias="0.182" />
+
+        <!--Pregunta -->
+        <TextView
+            android:id="@+id/idPregun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/Pregunta"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idBtnRegi"
+            app:layout_constraintVertical_bias="0.234" />
+
+        <!--Botón Ingresar -->
+        <Button
+            android:id="@+id/idIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#FEFEFE"
+            android:fontFamily="serif"
+            android:text="@string/In"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idPregun" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">MediAlert UGB-CRU</string>
+
+    //Strings de Ingreso
+    <string name="TituloIngreso">Ingreso de usuario.</string>
+    <string name="correo">Ingresar correo:</string>
+    <string name="cajacorreo">USIS012345@ugb.edu.sv</string>
+    <string name="password">Ingresar contraseña:</string>
+    <string name="cajapassword">************</string>
+    <string name="btnIngresar">INGRESAR</string>
+    <string name="pregunta">¿No tienes una cuenta?</string>
+    <string name="Regi">REGISTRARSE</string>
+
+    //Strings de Registro
+    <string name="TituloRegistro">Registro de nuevo usuario</string>
+    <string name="Nombres">Nombre/s:</string>
+    <string name="CajaNombres">Juan Carlos</string>
+    <string name="Apellidos">Apellido/s:</string>
+    <string name="CajaApellidos">Castro Pineda</string>
+    <string name="Edad">Edad:</string>
+    <string name="CajaEdad">00</string>
+    <string name="Genero">Género:</string>
+    <string name="CajaGenero">Género</string>
+    <string name="Carrera">Carrera:</string>
+    <string name="CajaCarrera">Ing. en Sistemas</string>
+    <string name="CorreoIns">Correo institucional:</string>
+    <string name="CajaCorreoInst">USIS012345@ugb.edu.sv</string>
+    <string name="Contraseña">Contraseña:</string>
+    <string name="CajaContraseña">************</string>
+    <string name="RepetirContra">Repetir contraseña:</string>
+    <string name="CajaRepetir">************</string>
+    <string name="BtnRegister">REGÍSTRATE</string>
+    <string name="Pregunta">¿Ya tienes una cuenta?</string>
+    <string name="In">INGRESAR</string>
+
+
+    //Strings de Menú de problemas médicos
+    <string name="TituloMenu">Menú de problemas de salud</string>
+    <string name="todo">TODO</string>
+    <string name="Cerrar">Cerrar Sesión</string>
+    <string name="Envi">Enviar Alerta</string>
+
+
+</resources>

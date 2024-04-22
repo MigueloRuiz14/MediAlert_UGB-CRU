@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/idScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_background">
+
+        <!-- Logo de la Universidad -->
+        <ImageView
+            android:id="@+id/idL2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/diseno_ingreso"
+            android:contentDescription="TODO"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.032"
+            app:srcCompat="@drawable/logougb"
+            tools:ignore="ContentDescription,HardcodedText" />
+
+        <!-- Título de menú de problemas -->
+        <TextView
+            android:id="@+id/idTituloMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/TituloMenu"
+            android:textColor="#0000FF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.221" />
+
+        <!-- Botón de fractura -->
+        <ImageButton
+            android:id="@+id/IdGUno"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/custom_button_background"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idTituloMenu"
+            app:layout_constraintVertical_bias="0.018"
+            app:srcCompat="@drawable/quebradura" />
+
+        <!-- Botón de Crisis de salud mental -->
+        <ImageButton
+            android:id="@+id/IdGDos"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/custom_button_background"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idTituloMenu"
+            app:layout_constraintVertical_bias="0.018"
+            app:srcCompat="@drawable/smental" />
+
+        <!-- Botón de Ataque cardíaco -->
+        <ImageButton
+            android:id="@+id/IdGTres"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/custom_button_background"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IdGUno"
+            app:layout_constraintVertical_bias="0.019"
+            app:srcCompat="@drawable/coralia" />
+
+        <!-- Botón de esguinces -->
+        <ImageButton
+            android:id="@+id/IdMUno"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_button_background"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IdGDos"
+            app:layout_constraintVertical_bias="0.003"
+            app:srcCompat="@drawable/esguinces" />
+
+        <!-- Botón de resfriado o gripe -->
+        <ImageButton
+            android:id="@+id/IdMDos"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="208dp"
+            android:background="@drawable/custom_button_background"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IdGTres"
+            app:layout_constraintVertical_bias="0.053"
+            app:srcCompat="@drawable/gripe" />
+
+        <!-- Botón de fiebre -->
+        <ImageButton
+            android:id="@+id/IdMTres"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="196dp"
+            android:background="@drawable/custom_button_background"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IdMUno"
+            app:layout_constraintVertical_bias="0.055"
+            app:srcCompat="@drawable/fiebre" />
+
+        <!-- Botón de alergia -->
+        <ImageButton
+            android:id="@+id/IdMCuatro"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/custom_button_background"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IdMDos"
+            app:layout_constraintVertical_bias="0.057"
+            app:srcCompat="@drawable/alergia" />
+
+        <!-- Botón de dolor de estómago o vómito -->
+        <ImageButton
+            android:id="@+id/IdLUno"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/custom_button_background"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IdMTres"
+            app:layout_constraintVertical_bias="0.052"
+            app:srcCompat="@drawable/estomago" />
+
+        <!-- Botón de dolor de cabeza -->
+        <ImageButton
+            android:id="@+id/IdLDos"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/custom_button_background"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IdMCuatro"
+            app:layout_constraintVertical_bias="0.082"
+            app:srcCompat="@drawable/dolorde" />
+
+        <!-- Botón de desmayo -->
+        <ImageButton
+            android:id="@+id/IdLTres"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_button_background"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IdLUno"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/desmayo" />
+
+        <!-- Botón cerrar sesión -->
+        <Button
+            android:id="@+id/idCerrarSesión"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FEFAFD"
+            android:fontFamily="serif"
+            android:text="@string/Cerrar"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IdEnviarAlerta" />
+
+        <!-- Botón Enviar alerta -->
+        <Button
+            android:id="@+id/IdEnviarAlerta"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F80707"
+            android:fontFamily="serif"
+            android:text="@string/Envi"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IdLatitud"
+            app:layout_constraintVertical_bias="0.159" />
+
+        <!-- Latitud -->
+        <TextView
+            android:id="@+id/IdLatitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latitud"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IdLDos"
+            app:layout_constraintVertical_bias="0.188" />
+
+        <!-- Longitud -->
+        <TextView
+            android:id="@+id/IdLongitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Longitud"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.829"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IdLTres"
+            app:layout_constraintVertical_bias="0.188" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
